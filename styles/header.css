@@ -1,0 +1,216 @@
+.header{
+    height: 90px;
+margin-top: -8px;
+    display: flex; flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+top: 0px;
+left: 0px; right: 0px;
+background-color: white;
+border-bottom-width: 0.1px;
+border-bottom-style: solid;
+border-bottom-color: rgb(255, 253, 253);
+z-index: 100;
+}
+
+.left-section{
+   
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+   
+}
+
+
+.middle-section{
+    flex: 1;  margin-left: 65px;
+    margin-right: 35px;
+    max-width: 480px;
+    display: flex;
+    align-items: center;
+    margin-top: -32px;
+}
+
+.hamburger-menu{
+    width: 18px;
+    height: 18px;
+  margin-left: 30px;
+  margin-top: 20px;
+
+}
+
+.youtube-logo{
+    width: 68px;
+    height: 18px;
+margin-left: 16px;
+margin-top: 20px;
+}
+
+.search-icon-button{
+    width:45px; margin-left: -2px;
+    background-color: white;
+height: 29px;  border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+border-width: 1px;
+border-color: rgb(175, 175, 175);
+background-color:  rgb(250, 247, 247);
+
+
+}
+
+.voice-icon,.search-icon-button,
+.camera-tooltip,.sau-cham-tooltip
+.not-count
+{
+    position:relative
+}
+
+
+/* tạo hiệu ứng nhấn vô hiện chữ:
+b1: tạo div trong button
+bs: class 2 div, div 1 relation, div 2: absolute
+b3:  opacity 0 với cả 2 div 
+và hover: opacity: 1  */
+
+.search-icon-button .tooltip, 
+.voice-icon .tooltip,
+.camera-tooltip .tooltip,
+.sau-cham-tooltip .tooltip,
+.not-count .tooltip
+{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.545);
+    color:white;
+    padding-left: 4px; 
+    padding-right: 4px; border-radius: 3px;
+    font-size: 13px; margin-top: 10px;
+    opacity: 0; 
+    transition: opacity 0.3s;
+    white-space: nowrap;
+
+}
+
+.search-icon-button:hover .tooltip, 
+.voice-icon:hover .tooltip,
+.camera-tooltip:hover .tooltip,
+.sau-cham-tooltip:hover .tooltip,
+.not-count:hover .tooltip
+{
+    opacity: 1;
+}
+
+.search-icon{
+width: 19px; padding-left: 2px;
+}
+
+.voice-icon{
+    cursor: pointer;
+    margin-left: 10px;
+    width: 28px;
+    height: 28px; 
+    border-radius: 18px;
+    border-width: 0px;
+    /* muốn càng tròn thì cho border-radiuss bằng nữa width và height */
+}
+
+
+
+
+.search-bar{
+    flex: 1; font-size: 14px;
+    height: 25px; background-color: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+   border-width: 0.6px; padding-left: 12px;
+   border-color: rgb(175, 175, 175);
+   width: 0; 
+  
+}
+.search-bar:hover{
+    border-color: rgb(9, 43, 215);
+    border-width: 1px;
+}
+
+
+.right-section{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -24px; margin-right: 20px;
+    flex-shrink: 0; 
+    /* flex-shrink = 0: không kéo dãn, 
+    kéo dãn hết cỡ: width=0; giống search-bar below */
+}
+
+
+.camera{
+    height: 20px;
+}
+
+.sau-cham{
+    height: 20px;
+}
+
+.notification{height: 20px;}
+
+.not-count{
+    position: relative;
+}
+
+.notification-count{
+    position: absolute;
+    top: -3px;
+    right:-5px;
+    background-color: rgb(182, 4, 4);
+    color: white;
+    font-size: 12px;
+    border-radius: 30px;
+    padding-top: 0px;
+    padding-left: 1px;
+    padding-right: 2px;
+}
+.ava-me{ height: 28px;
+    width: 10;
+border-radius: 20px;}
+
+.above-middle{
+    top: 64px;
+    left: -48px;
+    display: flex;
+    position: relative;
+    z-index: 100;
+    width: 20px;
+}
+
+ .css{
+    margin-left: 8px;
+border-radius: 5px;
+border-width: 0px;
+height: 20px;
+font-size: 11px;
+
+}
+
+.css:hover{
+background-color: gray;}
+
+.all{background-color: rgb(35, 35, 35);
+    margin-left: 8px;
+    border-radius: 5px;
+    border-width: 0px;
+    height: 25px;
+    font-size: 11px; height: 21px;
+color: white}
+
+.ghibli{
+    margin-left: 8px;
+    border-radius: 5px;
+    border-width: 0px;
+    height: 20px;
+    font-size: 11px;
+    
+}
+.ghibli:hover{
+    background-color: gray;
+}

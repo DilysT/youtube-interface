@@ -1,0 +1,62 @@
+<style>
+    .survey{
+    font-size: 18px;
+font-family: Georgia; 
+display: inline-block;
+}
+
+.yes
+{ border-width: 1px;
+    background-color: rgb(222, 219, 219);
+    display: inline-block;
+    vertical-align: right;
+    margin-left: 10px;
+
+}.no{ border-width: 1px;
+    background-color: rgb(222, 219, 219);
+    display: inline-block;
+    vertical-align: right;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.no:hover{ background: grey;}
+.request{font-size: 20px;
+font-weight: 500px; 
+display: block;
+margin-bottom: 12px;}
+.enter,.destination{display: block; margin-bottom: 8px; 
+background-color: rgb(238, 238, 238); border-width: 0px; 
+font-size: 8px; padding-left: 8px; padding-right: 30px;
+padding-top: 6px; padding-bottom: 6px; }
+
+.re-button {
+    background-color: black;
+    color: white;
+    display: inline;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-size: 7px;
+}
+.schedule{display: inline;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-size: 7px; border-width: 0px; padding-top: 3px; padding-bottom: 3px;
+ }
+ .schedule:hover {background-color: grey;}
+
+</style>
+
+<p class="survey"> Thanks for chatting with our <br>customer support. 
+    Would you<Br> like to take your quick survey?</p>
+
+        <button class="yes"> Yes </button>
+        <button class="no"> No </button>
+
+
+        <p class = " request"> <b>Request a ride now </b></p>
+<input class="enter" type="text" placeholder="Enter pick up location">
+<input class="destination" type="text" placeholder="Enter destination">
+ <!-- input để tạo search bõ -->
+<button class="re-button"> Request now </button>
+<button class="schedule"> Schedule for later </button>

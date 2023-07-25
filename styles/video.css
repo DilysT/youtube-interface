@@ -1,0 +1,64 @@
+.thumbnail, .thumbnail2
+{
+width: 100%;
+object-fit: cover;
+object-position: bottom;
+border-radius: 6px;
+border-width: 0px;
+border-style: solid;
+
+}
+
+.caption{
+ vertical-align: top; margin-bottom: 10px;
+    margin-left: 10px; font-size: 14px; font-weight: bold ;
+}
+.name,
+.views{  font-size: 12px; font-weight: 50px; margin-top: 1px;
+ color: rgb(92, 50, 50); margin-left: 10px;
+} .name{margin-bottom: 3.5px;}
+
+
+.info-grid{
+    display: grid; grid-template-columns: 50px 1fr ;
+}
+
+.avatar-div{
+width: 40px; vertical-align: top; margin-top: 5px; }
+
+.video-info{ width: 200px;}
+
+.avatar1{width: 40px; border-radius: 80px;
+margin-top: 6px; margin-left: 5px; }
+
+.video-grid{
+    display: grid; 
+grid-template-columns: 1fr 1fr 1fr 1fr;
+column-gap: 20px; row-gap: 45px; cursor: pointer;
+margin-top: 108px;
+}
+
+/* tạo độ co dãn linh hoạt cho các video
+(responsive design */
+
+
+@media(max-width: 800px) {
+    .video-grid{
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+.video-time{
+    background-color: rgba(0, 0, 0, 0.761) ; color: white;
+    position: absolute;
+    right: 4px;
+    margin-top: -22px;
+    padding-right: 2px;
+    padding-left: 3px;
+    font-size: 13px;
+    height: 14px;
+    width: 32px;
+}
+.thumbnail-all{
+    position: relative;
+}
